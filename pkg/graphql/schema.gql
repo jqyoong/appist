@@ -1,0 +1,44 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+scalar Time
+
+type Query {
+  users: [User!]!
+}
+
+type Mutation {
+  signIn(input: SignInInput!): Session!
+}
+
+type Subscription {
+  messageChange: Message
+}
+
+input SignInInput {
+  email: String!
+  password: String!
+}
+
+type Message {
+  id: ID!
+  text: String!
+  createdBy: String!
+  createdAt: Time!
+}
+
+"""
+A temporary and interactive information between the server and the user.
+"""
+type Session {
+  """
+  A unique string for identifying the user.
+  """
+  jwt: String!
+}
+
+type User {
+  id: ID!
+  name: String!
+}

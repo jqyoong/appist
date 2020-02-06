@@ -1,0 +1,7 @@
+Thanks for trying out {{.appName}}. Build apps on your own infrastructure today!
+
+{{.appName}} ( {{.appURL}} )
+
+{{yield body()}}
+
+© 2019 {{.appName}}. All rights reserved.

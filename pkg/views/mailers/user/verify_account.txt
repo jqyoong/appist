@@ -1,0 +1,20 @@
+{{extends "../../layouts/mailer.txt"}} {{block body()}}
+******************
+Welcome, {{.username}}!
+******************
+
+Thanks for trying {{.appName}}. We're thrilled to have you on board, please confirm your account by clicking on the link below:
+
+Confirm Your Account ( {{.actionURL}} )
+
+If you have any questions, feel free to email our support team ( {{.supportEmail}} ).
+
+
+Thanks,
+{{.appName}} Team
+
+
+If you're having trouble with the button above, copy and paste the URL below into your web browser.
+
+{{.actionURL}}
+{{end}}

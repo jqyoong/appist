@@ -1,0 +1,14 @@
+login: Login
+
+message:
+  Zero: Hi, {{.Name}}! You have {{.Count}} message.
+  One: Hi, {{.Name}}! You have {{.Count}} message.
+  Other: Hi, {{.Name}}! You have {{.Count}} messages.
+
+mailers:
+  user:
+    resetPassword:
+      subject: Reset Your Password
+    verifyAccount:
+      subject: Verify Your Account
+      welcome: Welcome

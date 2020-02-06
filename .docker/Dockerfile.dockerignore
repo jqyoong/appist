@@ -1,0 +1,10 @@
+.docker
+.editorconfig
+.git
+.gitignore
+.tool-versions
+.DS_Store
+dist
+node_modules
+tmp
+README.md

@@ -1,0 +1,12 @@
+{{extends "../layouts/application.html"}} {{block body()}}
+<main>
+  This content will be yielded in the layout above.
+
+  <img
+    width="300px"
+    src="{{assetPath(`images/logo.png`)}}"
+    alt="{{t(`login`, `zh-CN`)}}"
+  />
+  <img width="300px" src="{{assetPath(`images/paypal.jpg`)}}" />
+</main>
+{{end}}

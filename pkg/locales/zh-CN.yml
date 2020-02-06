@@ -1,0 +1,14 @@
+login: 登录
+
+message:
+  Zero: 嗨, {{.Name}}! 您有{{.Count}}则讯息。
+  One: 嗨, {{.Name}}! 您有{{.Count}}则讯息。
+  Other: 嗨, {{.Name}}! 您有{{.Count}}则讯息。
+
+mailers:
+  user:
+    resetPassword:
+      subject: 重设您的密码
+    verifyAccount:
+      subject: 验证您的账号
+      welcome: 欢迎

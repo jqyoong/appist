@@ -1,0 +1,16 @@
+# Refer to https://gqlgen.com/config/
+# for detailed .gqlgen.yml documentation.
+
+schema:
+  - pkg/graphql/*.gql
+  - pkg/graphql/*.graphql
+
+exec:
+  filename: pkg/graphql/gen_exec.go
+
+model:
+  filename: pkg/graphql/gen_model.go
+
+resolver:
+  filename: pkg/graphql/resolver_root.go
+  type: ResolverRoot
