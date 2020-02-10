@@ -1,5 +1,5 @@
-asdf
-awscli
-postgresql
-terraform
-upx
+brew "asdf"
+brew "awscli"
+brew "postgresql"
+brew "terraform"
+brew "upx"
